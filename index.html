@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html class="isLight">
 
     <head>
         <meta charset="UTF-8" />
@@ -14,50 +14,51 @@
 
     <body>
         <!-- Body Info -->
-        <section>
+        <section class="container">
             <!-- NavBar -->
-            <div>
-                <h1>A Dev Blog</h1>
-                <button class="themeSwticher">&#9728</button>
-                <!-- moon html code = &#9789; -->
-            </div>
+            <header class="navBar navBarIsLight">
+                <h1 class="navTitle navTitleIsLight">A Dev Blog</h1>
+                <button class="themeSwitcher themeSwitcherIsLight">&#9728</button>
+                <!-- moon html code = &#9789; sun html code &#9728-->
+            </header>
 
             <!-- add two objects wrapped in div in row. Row 1 has title for my first blog and row 2 is a form for user input of username, title, and content -->
             <!-- Left Image section -->
             <div>
-                <p>A Dev Blog</p> <!-- Add bg color gradient and border radius to mimic mock -->
+                <h1>A Dev Blog</h1> <!-- Add bg color gradient and border radius to mimic mock -->
             </div>
 
             <!-- Right Form section -->
             <div>
+                <h1>Whats on your mind?</h1>
                 <form action="./blog.html" method="post" target="_self">
                     <!-- Username Input -->
                     <div>
-                        <label for="username">Username:</label>
+                        <label for="username"><strong>Username:</strong></label>
                             <input type="text" id="username" name="username" maxlength="25" placeholder="USERNAME" required>
                     </div>
 
                     <!-- Title Input -->
                     <div>
-                        <label for="title">Title:</label>
+                        <label for="title"><strong>Title:</strong></label>
                             <input type="text" id="title" name="title" placeholder="TITLE" required>
                     </div>
 
                     <!-- Content Input -->
                     <div>
-                        <label for="content">Content:</label>
+                        <label for="content"><strong>Content:</strong></label>
                         <input type="text" id="content" name="content" placeholder="CONTENT" required>
                     </div>
 
                     <div> <!-- Allows buttons to be styled outside of rest of form tag -->
                         <!-- Submit Button -->
                         <div>
-                            <button type="submit">SUBMIT</button>
+                            <button type="submit"><strong>SUBMIT</strong></button>
                         </div>
 
                         <!-- Reset Button -->
                         <div>
-                            <button type="reset">RESET</button>
+                            <button type="reset"><strong>RESET</strong></button>
                         </div>
                     </div>
                 </form>
@@ -69,7 +70,7 @@
     <footer>
         <div>
             <!-- Footer Info -->
-            <p>Made with ❤️️ by xChrisxWilliamsx</p>
+            <h2><strong>Made with ❤️️ by xChrisxWilliamsx</strong></h2>
             <div>
                 <ul>
                     <!-- Credentials -->

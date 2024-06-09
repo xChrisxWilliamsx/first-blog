@@ -1,0 +1,45 @@
+/* Saves commonly used colors */
+:root {
+    --black: #000000;
+    --white: #ffffff;
+}
+
+/* Sets background color for webpage whe in light mode*/
+.isLight {
+    background-color: var(--white);
+}
+
+/* Sets background color for webpage when in dark mode */
+.isDark {
+    background-color: #1a1924;
+}
+
+/* Sets border for navBar when in light mode */
+.navBarIsLight {
+    border: 4px solid var(--black);
+}
+
+/* Sets border for navBar when in dark mode */
+.navBarIsDark {
+    border: 4px solid var(--white);
+}
+
+/* Sets color for navTitle when in light mode */
+.navTitleIsLight {
+    color: var(--black);
+}
+
+/* Sets color for navTitle when in dark mode */
+.navTitleIsDark {
+    color: var(--white);
+}
+
+/* Sets color for theme button when in light mode */
+.themeSwitcherIsLight {
+    color: #ffe135;
+}
+
+/* Sets color for theme button when in dark mode */
+.themeSwitcherIsDark {
+    color: #a0b2ff;
+}
