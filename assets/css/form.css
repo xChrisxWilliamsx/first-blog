@@ -1,7 +1,30 @@
+/* Resets padding and margin */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Saves commonly used colors */
+:root {
+    height: 100%;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+/* Sets size of usable viewport height */
+body {
+    height: 100%;
+    /* background-color: #000000;
+    color: #ffffff; */
+}
+
 /* Sets positioning of contents */
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 100%;
 }
 
 /* Sets size and positioning of navBar */
@@ -10,6 +33,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-basis: 100%;
     padding: 5px;
 }
 
@@ -18,11 +42,14 @@
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 /* Sets size, positioning, and shadow of theme button */
 .themeSwitcher {
-    font-size: 3rem;
+    font-size: 1.5rem;
     border: none;
     background: none;
     cursor: pointer;
@@ -32,5 +59,199 @@
 
 /* Sets size when theme button is hovered */
 .themeSwitcher:hover {
-    font-size: 3.5rem;
+    font-size: 1.7rem;
+}
+
+/* Sets size and positioning of the two main content items the title image and form section */
+.mainContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex: 1 1 50%;
+    height: 63dvh;
+}
+
+/* Sets size and positioning of the title image section */
+.titleSect {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 48%;
+    border: 4px solid var(--black); /* Need to move to style.css */
+    margin-right: 5px;
+}
+
+/* Sets size, positioning, and bg of the title image section */
+.circleImg {
+    display: flex;
+    background-image: linear-gradient(yellow, brown);
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 55%;
+    height: 90%;
+    justify-content: center;
+    border-radius: 50%;
+    align-content: center;
+    border: 4px solid var(--black);
+}
+
+/* Sets size of image on different viewport sizes */
+@media (max-width: 900px){
+    .circleImg {
+        height: 50%;
+    }
+}
+
+/* Sets size of image on different viewport sizes */
+@media (max-width: 500px){
+    .circleImg {
+        height: 35%;
+    }
+}
+
+/* Sets size of title image text */
+.titleImg {
+    font-size: 4rem;
+}
+
+/* Sets size of text on different viewport sizes */
+@media (max-width: 900px){
+    .titleImg {
+        font-size: 1.5rem;
+    }
+}
+
+/* Sets size of text on different viewport sizes */
+@media (max-width: 500px){
+    .titleImg {
+        font-size: 1rem;
+    }
+}
+
+/* Sets size and positioning of form section */
+.formSect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid var(--black); /* Need to move to style.css */
+    flex-basis: 48%; 
+    margin-left: 5px;
+}
+
+/* Sets size and positioning of form section */
+.formContent {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 500px){
+    .formTitle {
+        font-size: 1.1rem;
+    }
+}
+
+/* Sets size and positioning of form */
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 80%;
+}
+
+/* Sets size and positioning of username section */
+.usernameField {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Sets size and positioning of title section */
+.titleField {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Sets size and positioning of content section */
+.contentField {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+}
+
+/* Sets size and positioning of content box */
+.contentBox {
+    height: 85%;
+    resize: none;
+}
+
+/* Sets size and positioning of button section */
+.buttonField {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Sets size and positioning of submit button */
+.subBox {
+    width: 80%;
+    margin: 5px;
+}
+
+/* Sets size and positioning of submit button */
+.subContent {
+    width: 100%;
+    margin: 5px;
+}
+
+/* Sets size and positioning of reset button */
+.resetBox {
+    margin: 5px;
+}
+
+/* Sets size and positioning of reset button */
+.resetContent {
+    margin: 5px;
+}
+
+/* Sets size and positioning of footer */
+.footer {
+    border: 4px solid var(--black);
+    flex-basis: 100%;
+}
+
+/* Sets size and positioning of footer title */
+.footerTitle {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Sets size and positioning of credential list */
+.credList {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: .8rem;
+}
+
+/* Sets size, positioning, and removes bullet points form credential list */
+.listStyle {
+    list-style-type: none;
+    padding: 5px;
 }
