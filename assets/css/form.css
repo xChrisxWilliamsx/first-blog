@@ -16,9 +16,10 @@ body {
     height: 100%;
 }
 
+/* Removes text decorations from all anchor tags */
 a {
     text-decoration: none;
-    color: #000000;
+    color: #ff0000;
 }
 
 /* Sets positioning of contents */
@@ -83,7 +84,6 @@ a {
     align-items: center;
     justify-content: center;
     flex-basis: 48%;
-    border: 4px solid var(--black); /* Need to move to style.css */
     margin-right: 5px;
 }
 
@@ -140,14 +140,13 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 4px solid var(--black); /* Need to move to style.css */
     flex-basis: 48%; 
     margin-left: 5px;
 }
 
 /* Sets size and positioning of form section */
 .formContent {
-    width: 100%;
+    width: 95%;
     height: 90%;
     display: flex;
     flex-direction: column;
@@ -233,7 +232,6 @@ a {
 
 /* Sets size and positioning of footer */
 .footer {
-    border: 4px solid var(--black);
     flex-basis: 100%;
 }
 

@@ -19,7 +19,6 @@ body {
 /* Removes text decorations from all anchor tags */
 a {
     text-decoration: none;
-    color: #000000;
 }
 
 /* Sets positioning of contents */
@@ -27,6 +26,7 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    height: 100%;
 }
 
 /* Sets size and positioning of navBar */
@@ -38,7 +38,6 @@ a {
     padding: 5px;
     position: sticky;
     top: 0;
-    background: white;
 }
 
 /* Sets size, positioning, and font type of navTitle */
@@ -92,7 +91,6 @@ a {
 
 /* Sets size and positioning of posts */
 .posts {
-    border: 4px solid var(--black);    
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -104,13 +102,11 @@ a {
 .postBox {
     padding: 8px;
     margin: 8px;
-    border: 4px solid var(--black);
 }
 
 /* Sets size and positioning of post title */
 .postTitle {
     font-size: 1.2rem;
-    border-bottom: 2px solid black;
     margin-bottom: 10px;
 }
 
@@ -126,9 +122,9 @@ a {
     text-decoration: underline;
 }
 
-/* Sets size and positioning of footer */
-.footer {
-    border: 4px solid var(--black);
+/* Sets footer anchor tags to red */
+footer a {
+    color: #ff0000;
 }
 
 /* Sets size and positioning of footer title */

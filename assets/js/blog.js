@@ -1,0 +1,1 @@
+// handles taking local storage inputs and creates their corresponding posts
