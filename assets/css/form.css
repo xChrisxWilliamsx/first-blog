@@ -14,8 +14,11 @@
 /* Sets size of usable viewport height */
 body {
     height: 100%;
-    /* background-color: #000000;
-    color: #ffffff; */
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
 }
 
 /* Sets positioning of contents */

@@ -1,0 +1,154 @@
+/* Resets padding and margin */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Saves commonly used colors */
+:root {
+    height: 100%;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+/* Sets size of usable viewport height */
+body {
+    height: 100%;
+}
+
+/* Removes text decorations from all anchor tags */
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Sets positioning of contents */
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+/* Sets size and positioning of navBar */
+.navBar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+/* Sets size, positioning, and font type of navTitle */
+.navTitle {
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Sets size of nav title on smaller screens */
+@media (max-width: 500px){
+    .navTitle {
+        font-size: 1.3rem;
+    }
+}
+
+/* Sets size and positioning of nav buttons */
+.blogButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+/* Sets style, size, and positioning of back button */
+.backToMain {
+    font-size: 1.2rem;
+    background-image: radial-gradient(#ffff00, #ffa500, #a52a2a);
+    cursor: pointer;
+    margin-right: 30px;
+    padding: 7px;
+}
+
+/* Sets size, positioning, and shadow of theme button */
+.themeSwitcher {
+    font-size: 1.7rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-right: 15px;
+    text-shadow: 4px 1px 5px #ffffff;
+}
+
+/* Sets size when theme button is hovered */
+.themeSwitcher:hover {
+    font-size: 1.9rem;
+}
+
+/* Sets size and positioning of posts */
+.posts {
+    border: 4px solid var(--black);    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+/* Sets size and positioning of post box */
+.postBox {
+    padding: 8px;
+    margin: 8px;
+    border: 4px solid var(--black);
+}
+
+/* Sets size and positioning of post title */
+.postTitle {
+    font-size: 1.2rem;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+/* Sets positioning of content */
+.postContent {
+    margin-bottom: 15px;
+}
+
+
+/* Sets size and positioning of Username */
+.postUser {
+    font-size: .8rem;
+    text-decoration: underline;
+}
+
+/* Sets size and positioning of footer */
+.footer {
+    border: 4px solid var(--black);
+}
+
+/* Sets size and positioning of footer title */
+.footerTitle {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Sets size and positioning of credential list */
+.credList {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: .8rem;
+}
+
+/* Sets size, positioning, and removes bullet points form credential list */
+.listStyle {
+    list-style-type: none;
+    padding: 5px;
+}
