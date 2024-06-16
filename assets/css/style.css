@@ -1,37 +1,40 @@
 /* Saves commonly used colors */
 :root {
-    --black: #000000;
-    --white: #ffffff;
+    --dark: #000000;
+    --light: #ffffff;
+    --gray: #1a1924;
 }
 
 /* Sets background color for webpage whe in light mode*/
 .isLight {
-    background-color: var(--white);
+    background-color: var(--light);
 }
 
 /* Sets background color for webpage when in dark mode */
 .isDark {
-    background-color: #1a1924;
+    background-color: var(--gray);
 }
 
 /* Sets border for navBar when in light mode */
 .navBarIsLight {
-    border: 4px solid var(--black);
+    border: 4px solid var(--dark);
+    background-color: var(--light);
 }
 
 /* Sets border for navBar when in dark mode */
 .navBarIsDark {
-    border: 4px solid var(--white);
+    border: 4px solid var(--light);
+    background-color: var(--gray);
 }
 
 /* Sets color for navTitle when in light mode */
 .navTitleIsLight {
-    color: var(--black);
+    color: var(--dark);
 }
 
 /* Sets color for navTitle when in dark mode */
 .navTitleIsDark {
-    color: var(--white);
+    color: var(--light);
 }
 
 /* Sets color for theme button when in light mode */
@@ -42,4 +45,135 @@
 /* Sets color for theme button when in dark mode */
 .themeSwitcherIsDark {
     color: #a0b2ff;
+}
+
+/* Sets color for index title when in light mode */
+.titleSectIsLight {
+    border: 4px solid var(--dark);
+}
+
+/* Sets color for index title when in dark mode */
+.titleSectIsDark {
+    border: 4px solid var(--light);
+}
+
+/* Sets color for index form when in light mode */
+.formSectIsLight {
+    border: 4px solid var(--dark);
+}
+
+/* Sets color for index form when in dark mode */
+.formSectIsDark {
+    border: 4px solid var(--light);
+}
+
+/* Sets color for index form title when in light mode */
+.formTitleIsLight {
+    color: var(--dark);
+}
+
+/* Sets color for index form title when in dark mode */
+.formTitleIsDark {
+    color: var(--light);
+}
+
+/* Sets color for index username field when in light mode */
+.usernameFieldIsLight {
+    color: var(--dark);
+}
+
+/* Sets color for index username field when in dark mode */
+.usernameFieldIsDark {
+    color: var(--light);
+}
+
+/* Sets color for index title field when in light mode */
+.titleFieldIsLight {
+    color: var(--dark);
+}
+
+/* Sets color for index title field when in dark mode */
+.titleFieldIsDark {
+    color: var(--light);
+}
+
+/* Sets color for index content field when in light mode */
+.contentFieldIsLight {
+    color: var(--dark);
+}
+
+/* Sets color for index content field when in dark mode */
+.contentFieldIsDark {
+    color: var(--light);
+}
+
+/* Sets color for post box when in light mode */
+.postBoxIsLight {
+    border: 4px solid var(--dark);
+}
+
+/* Sets color for post box when in dark mode */
+.postBoxIsDark {
+    border: 4px solid var(--light);
+}
+
+/* Sets color for post title when in light mode */
+.postTitleIsLight {
+    border-bottom: 2px solid var(--dark);
+}
+
+/* Sets color for post title when in dark mode */
+.postTitleIsDark {
+    border-bottom: 2px solid var(--light);
+    color: var(--light);
+}
+
+/* Sets color for post content when in light mode */
+.postContentIsLight {
+    color: var(--dark);
+}
+
+/* Sets color for post content when in dark mode */
+.postContentIsDark {
+    color: var(--light);
+}
+
+/* Sets color for post user info when in light mode */
+.postUserIsLight {
+    color: var(--dark);
+}
+
+/* Sets color for post user info when in dark mode */
+.postUserIsDark {
+    color: var(--light);
+}
+
+/* Sets color for footer when in light mode */
+.footerIsLight {
+    border: 4px solid var(--dark);
+}
+
+/* Sets color for footer when in dark mode */
+.footerIsDark {
+    border: 4px solid var(--light);
+}
+
+/* Sets color for footer title when in light mode */
+.footerTitleIsLight {
+    color: var(--dark);
+}
+
+/* Sets color for footer title when in dark mode */
+.footerTitleIsDark {
+    color: var(--light);
+}
+
+/* Sets color for cred list when in light mode */
+.credListIsLight {
+    color: var(--dark);
+}
+
+/* Sets color for cred list when in dark mode */
+.credListIsDark {
+    color: var(--light);
 }
