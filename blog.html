@@ -22,7 +22,7 @@
                 <h1 class="navTitle navTitleIsLight">A Dev Blog</h1>
                 <div class="blogButtons">
                     <!-- back button takes you back to main blog page (index.html) -->
-                    <button class="backToMain"><a href="./index.html" target="_self" title="Homepage - A Dev Blog">&#9754; Back</a></button>
+                    <a href="./index.html" target="_self" title="Homepage - A Dev Blog"><button class="backToMain">&#9754; Back</button></a>
                     <!-- sun html code = &#9728 / moon html code = &#9789; -->
                     <button class="themeSwitcher themeSwitcherIsLight" title="Swap between light and dark modes">&#9728</button>
                 </div>
@@ -62,12 +62,11 @@
             </footer>
 
         </section>
+        
+        <!-- JS Links -->
+        <script defer src="./assets/js/blog.js"></script> <!-- JS for main Blog page handles pulling from localStorage to generate sectioned blog posts. -->
+        <script defer src="./assets/js/logic.js"></script> <!-- JS for handling theme mode change. -->
 
     </body>
-
-
-    <!-- JS Links -->
-    <script src="./assets/js/form.js"></script> <!-- JS for main Blog page handles pulling from localStorage to generate sectioned blog posts. -->
-    <script src="./assets/js/logic.js"></script> <!-- JS for handling theme mode change. -->
 
 </html>

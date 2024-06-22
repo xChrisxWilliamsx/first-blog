@@ -35,7 +35,7 @@
                 <div class="formSect formSectIsLight">
                     <div class="formContent">
                         <h1 class="formTitle formTitleIsLight">Whats on your mind?</h1>
-                        <form class="form" action="./blog.html" method="post" target="_self">
+                        <form class="form" method="post" target="_self">
                             <!-- Username Input -->
                             <div class="usernameField usernameFieldIsLight">
                                 <label for="username"><strong>Username:</strong></label>
@@ -51,10 +51,11 @@
                             <!-- Content Input -->
                             <div class="contentField contentFieldIsLight">
                                 <label for="content"><strong>Content:</strong></label>
-                                <textarea class="contentBox" type="text" id="content" name="content" placeholder="CONTENT" required></textarea>
+                                    <textarea class="contentBox" type="text" id="content" name="content" placeholder="CONTENT" required></textarea>
                             </div>
-
-                            <div class="buttonField"> <!-- Allows buttons to be styled outside of rest of form tag -->
+                            
+                            <!-- Allows buttons to be styled outside of rest of form tag -->
+                            <div class="buttonField">
                                 <!-- Submit Button -->
                                 <div class="subBox">
                                     <button class="subContent" type="submit" title="Submit input fields"><strong>SUBMIT</strong></button>
@@ -85,11 +86,9 @@
             </footer>
 
         </section>
+        <!-- JS Links -->
+        <script defer src="./assets/js/form.js"></script> <!-- JS for main Form page handles form submission.  Saves to localStorage. --> 
+        <script defer src="./assets/js/logic.js"></script> <!-- JS for handling theme mode change. -->
     </body>
-
-
-    <!-- JS Links -->
-    <script src="./assets/js/form.js"></script> <!-- JS for main Form page handles form submission.  Saves to localStorage. --> 
-    <script src="./assets/js/logic.js"></script> <!-- JS for handling theme mode change. -->
 
 </html>
