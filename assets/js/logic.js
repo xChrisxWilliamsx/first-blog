@@ -1,52 +1,60 @@
 // Handles theme change
 
-// Targets theme button
+// target theme button 
 const themeBtn = document.querySelector('.themeSwitcher');
 
-// Switches theme icon and color scheme 
-themeBtn.addEventListener('click', function(event) {
-    event.preventDefault();
+// get local Storage for theme
+let themeVal = localStorage.getItem('theme');
 
-    
-    if (document.querySelector('.navBarDark')) {
-        
-        themeBtn.innerHTML = "&#9728";
+// create function to save theme button to local storage as light or Dark
+function themeCheck() {
+    if (localStorage.getItem('theme') == "dark") {
+        localStorage.setItem('theme', 'light');
+    } else {
+        localStorage.setItem('theme', 'dark');
+    }
+}
 
+// create function to check value of local theme key and change class based on selection
+function themeSwitcher() {
+    if (localStorage.getItem('theme') == "light") {
+        themeBtn.innerHTML = "&#9728"
         let elements = document.querySelectorAll('[class*="Dark"]');
-         
         elements.forEach(element => {
-    
-          let themeClass = element.className.split(" ");
-    
-          for(let i = 0; i < themeClass.length; i++) {
+            let themeClass = element.className.split(" ");
+            for(let i = 0; i < themeClass.length; i++) {
             if (themeClass[i].endsWith('Dark')) {
                 themeClass[i] = themeClass[i].replace('Dark', 'Light');
             }
-          }
-    
-          element.className = themeClass.join(" ");
-          
+            }
+            element.className = themeClass.join(" "); 
         });
-
     } else {
-
         themeBtn.innerHTML = "&#9789;";
-
         let elements = document.querySelectorAll('[class*="Light"]');
-         
         elements.forEach(element => {
-    
-          let themeClass = element.className.split(" ");
-    
-          for(let i = 0; i < themeClass.length; i++) {
+            let themeClass = element.className.split(" ");
+            for(let i = 0; i < themeClass.length; i++) {
             if (themeClass[i].endsWith('Light')) {
                 themeClass[i] = themeClass[i].replace('Light', 'Dark');
             }
-          }
-    
-          element.className = themeClass.join(" ");
-
+            }
+            element.className = themeClass.join(" ");
         });
     }
+}
 
+// add event listener for click and call both functions
+themeBtn.addEventListener('click', function(event) {
+    event.preventDefault();
+    themeVal = localStorage.getItem('theme');
+    themeCheck();        
+    themeSwitcher();
+    console.log(localStorage.getItem('theme'));
 });
+
+// Saves theme preference on load/page reload
+window.onload = (event) => {
+    event.preventDefault();    
+    themeSwitcher();
+};
