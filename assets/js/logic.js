@@ -8,10 +8,10 @@ let themeVal = localStorage.getItem('theme');
 
 // create function to save theme button to local storage as light or Dark
 function themeCheck() {
-    if (localStorage.getItem('theme') == "dark") {
-        localStorage.setItem('theme', 'light');
-    } else {
+    if (localStorage.getItem('theme') == "light") {
         localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
     }
 }
 
@@ -50,11 +50,13 @@ themeBtn.addEventListener('click', function(event) {
     themeVal = localStorage.getItem('theme');
     themeCheck();        
     themeSwitcher();
-    console.log(localStorage.getItem('theme'));
 });
 
 // Saves theme preference on load/page reload
 window.onload = (event) => {
-    event.preventDefault();    
+    event.preventDefault();
+    if (!localStorage.getItem('theme')) {
+        localStorage.setItem('theme', 'light');
+    }    
     themeSwitcher();
 };
